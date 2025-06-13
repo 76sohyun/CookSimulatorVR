@@ -5,18 +5,22 @@ using UnityEngine;
 public class ChickenCut : MonoBehaviour
 {
     public GameObject[] chickenParts;
-    [SerializeField] private int hit;
+    private int hit;
+    public LayerMask layerMask;
 
     private void OnCollisionEnter(Collision collision)
     {
-        Debug.Log("충돌감지");
-        if (collision.gameObject.layer == 7)
+        if (1 << collision.gameObject.layer == layerMask)
         {
             if(hit < chickenParts.Length)
             {
-                Debug.Log("썰다");
                 Partactive(hit);
                 hit++;
+            }
+
+            if(hit >= chickenParts.Length)
+            {
+                Destroy(gameObject);
             }
         }
     }
@@ -26,7 +30,7 @@ public class ChickenCut : MonoBehaviour
         GameObject gameObject = chickenParts[index];
         gameObject.SetActive(true);
         gameObject.transform.SetParent(null);
-        Rigidbody rigidbody = gameObject.AddComponent<Rigidbody>();
+        Rigidbody rigidbody = gameObject.GetComponent<Rigidbody>();
         rigidbody.AddForce(Vector3.up * 1f, ForceMode.Impulse);
     }
 }
