@@ -42,9 +42,9 @@ public class Grillbutton : MonoBehaviour
         Nongrill.SetActive(true);
     }
 
-    private bool IsAngleClose(float a, float b, float threshold = 1f)
+    private bool IsAngleClose(float a, float b)
     {
-        return Mathf.Abs(a - b) < threshold;
+        return Mathf.Abs(a - b) < 1f;
     }
 
 }
