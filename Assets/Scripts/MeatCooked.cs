@@ -5,9 +5,11 @@ using UnityEngine;
 public class MeatCooked : MonoBehaviour
 {
     [SerializeField] private float CookTimer;
+    [SerializeField] private float BurnTimer;
     private float Timer;
     private bool isGrill = false;
     private bool isCook = false;
+    private bool isBurn = false;
 
     public GameObject GrillMeat;
     public LayerMask grillLayer;
@@ -21,6 +23,12 @@ public class MeatCooked : MonoBehaviour
             if(Timer >= CookTimer)
             {
                 Cook();
+            }
+
+            if (!isBurn && Timer >= BurnTimer)
+            {
+                isBurn = true;
+                Destroy(gameObject);
             }
         }
     }
