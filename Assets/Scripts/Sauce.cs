@@ -4,16 +4,33 @@ using UnityEngine;
 
 public class Sauce : MonoBehaviour
 {
-    public GameObject Sauceobject;
+    public GameObject MainSauce;
+    public LayerMask SauceLayer;
 
-    void Start()
-    {
-        
-    }
+    private bool isSauce = false;
+    private bool isCook = false;
 
-    // Update is called once per frame
+   
     void Update()
     {
-        
+        if(isSauce && !isCook)
+        {
+            Cook();
+        }
+    }
+
+    private void Cook()
+    {
+        isCook = true;
+        Destroy(gameObject);
+        Instantiate(MainSauce, transform.position, transform.rotation);
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (LayerMask.LayerToName(other.gameObject.layer) == "Sauce")
+        {
+            isSauce = true;
+        }
     }
 }
