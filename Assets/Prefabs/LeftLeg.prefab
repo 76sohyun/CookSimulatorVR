@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 8354983896242204859}
   - component: {fileID: 6385361910016364199}
   - component: {fileID: 8469673325842054610}
+  - component: {fileID: -9197078022082097833}
   m_Layer: 0
   m_Name: LeftLeg
   m_TagString: Untagged
@@ -288,6 +289,25 @@ MonoBehaviour:
   m_StartingSingleGrabTransformers: []
   m_StartingMultipleGrabTransformers: []
   m_AddDefaultGrabTransformers: 1
+--- !u!114 &-9197078022082097833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2070064716998230062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15fce3595a26b53498e0f90bb500cb20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CookTimer: 5
+  BurnTimer: 10
+  FriedChicken: {fileID: 814266681545190339, guid: 7c1171828ebfb7940ab4c43521d34a7c,
+    type: 3}
+  OilLayer:
+    serializedVersion: 2
+    m_Bits: 256
 --- !u!1 &7935771287053868211
 GameObject:
   m_ObjectHideFlags: 0
