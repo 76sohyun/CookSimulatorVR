@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ChickenCut : MonoBehaviour
+public class FoodCut : MonoBehaviour
 {
     public GameObject[] chickenParts;
     private int hit;
