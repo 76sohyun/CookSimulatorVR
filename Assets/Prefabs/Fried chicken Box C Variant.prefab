@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8506520101010898916}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -108,6 +108,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Fried chicken Box C Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 6851270696287000226, guid: 930d630b424a2bd4eba69de33ef322b2,
+        type: 3}
+      propertyPath: m_Layer
+      value: 17
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 9106950348184865236, guid: 930d630b424a2bd4eba69de33ef322b2, type: 3}
@@ -347,6 +352,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mustard pot
       objectReference: {fileID: 0}
+    - target: {fileID: 7360775888279749971, guid: da5b699675a06484cb5754057b74d061,
+        type: 3}
+      propertyPath: m_Layer
+      value: 17
+      objectReference: {fileID: 0}
     - target: {fileID: 7885075102077591529, guid: da5b699675a06484cb5754057b74d061,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -502,6 +512,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fried chicken B
       objectReference: {fileID: 0}
+    - target: {fileID: 8977686269011935698, guid: dcb3f4bb911352b4baa672140f7d6d2a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 17
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1762793613572129772, guid: dcb3f4bb911352b4baa672140f7d6d2a, type: 3}
     m_RemovedGameObjects: []
@@ -592,6 +607,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fried chicken C
       objectReference: {fileID: 0}
+    - target: {fileID: 2194089225444387340, guid: 5ef36c4706634304eb09dd6335cfd76f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 17
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 3940619285853228696, guid: 5ef36c4706634304eb09dd6335cfd76f, type: 3}
     m_RemovedGameObjects: []
@@ -616,6 +636,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Fried chicken D
+      objectReference: {fileID: 0}
+    - target: {fileID: 4744702645005263782, guid: cd6577092af62294497a7b14e9f4d47d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 5373710550676371740, guid: cd6577092af62294497a7b14e9f4d47d,
         type: 3}
